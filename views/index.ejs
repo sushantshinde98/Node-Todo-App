@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
@@ -17,27 +18,27 @@
         <hr>
         <div class="add-todo">
             <form action="/" method="POST">
-                <input type="text" name="todo" id="todo"><button id='todo-btn' name="addtodo">Add</button>
+                <input type="text" name="todo" placeholder="e.g Pay Bills" id="todo" maxlength="44"><button id='todo-btn' name="addtodo">Add</button>
             </form>
         </div>
         <hr>
         <div class="todo-data">
             <ul>
-                <li class="todo-item">
-                    <input type="checkbox" name="chk" id="chk"><span>Pay Bills</span>
-                    
+                <!-- <% let cnt=alltodo.length %> -->
+                <% alltodo.forEach((item)=>{ %>
+                <li class="todo-item">  
+                        <span id="todo-name">
+                    <!-- <input type="checkbox" name="chk" id="chk">Bjkdd -->
+                    <%= item.todoContent %>
+                        </span>
+                        <a href="/<%=item._id%>" class="material-icons">delete</a> 
                 </li>
-                <li class="todo-item">
-                    <input type="checkbox" name="chk" id="chk"><span>Buy Milk!</span>
-                </li>
+            <% })%>
             </ul>
         </div>
 
     </div>
     <script>
-        document.querySelector('#todo-btn').addEventListener('click',function(){
-            alert('you clicked! me!')
-        })
     </script>
 </body>
 </html>

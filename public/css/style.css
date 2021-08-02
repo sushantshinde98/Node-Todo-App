@@ -1,66 +1,79 @@
-.container{
+.container {
   top: 40px;
   position: relative;
   display: block;
-width: 500px;
-margin: 10px auto 100px;
-background-color:#fff;
-padding:0px 10px 10px 10px;
-border-radius:10px;
-border-style:solid;
+  width: 500px;
+  margin: 10px auto 100px;
+  background-color: #fff;
+  padding: 0px 10px 10px 10px;
+  border-radius: 10px;
+  border-style: solid;
 }
 .brand img {
-  top:-10px;
-position: relative;
-float: left;
-height:55px;
-width:90px;
-
+  top: -10px;
+  position: relative;
+  float: left;
+  height: 55px;
+  width: 90px;
 }
 
 .brand h1 {
-position: relative;
-top: 3px;
-left: 90px;
-
+  position: relative;
+  top: 3px;
+  left: 90px;
 }
-body{
-width: 100%;
-height: 100vh;
-/* overflow: hidden; */
-padding: 10px;
-background: linear-gradient(to bottom, #68EACC 0%, #497BE8 100%);
+body {
+  width: 100%;
+  height: 100vh;
+  /* overflow: hidden; */
+  padding: 10px;
+  background: linear-gradient(to bottom, #68eacc 0%, #497be8 100%);
 }
-#todo{
-align-items: center;
-width: 70%;
-padding: 12px 20px;
-margin: 5px 0;
-border-radius: 25px;
-
+#todo {
+  align-items: center;
+  width: 70%;
+  padding: 10px;
+  height: 15px;
+  font-weight: bolder;
+  margin: 5px 0;
+  border-radius: 25px;
+}
+.material-icons {
+  color: rgb(218, 13, 13) !important;
+  position: absolute;
+  margin-left: 40px;
+  text-decoration: none;
+  top: 2px;
+  right: 5px;
+}
+#todo::placeholder {
+  text-align: center;
 }
 #todo:focus {
-outline: none;
+  outline: none;
 }
-.todo-item{
-list-style: none;
-height: 26px;
-width: 80%;
-box-sizing: border-box;
-background-color: rgb(182, 179, 179);
-margin: 5px;
-vertical-align:middle;
-border-radius: 20px;
-}
-#chk{
-top:3px;
-position: relative;
+.todo-item {
+  list-style: none;
+  height: 28px;
+  width: 90%;
+  background-color: rgb(182, 179, 179);
+  margin: 5px;
+  vertical-align: middle;
+  border-radius: 20px;
+  margin-left: -10px;
+  position: relative;
 }
 
-#todo-btn{
-width: 97px;
-margin-left: 3px;
-border-radius: 20px;
-height: 40px;
+#todo-btn {
+  width: 97px;
+  margin-left: 3px;
+  border-radius: 20px;
+  height: 40px;
+  background-image: linear-gradient(to right, #2bc0e4 0%, #eaecc6 51%, #2bc0e4);
+}
 
+#todo-name {
+  position: relative;
+  top: 3px;
+  left: 10px;
 }

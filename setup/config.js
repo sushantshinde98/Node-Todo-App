@@ -1,5 +1,5 @@
 const myconfig={
-    mongoURL:"mongodb://localhost:27017/Node",
+    mongoURL:"mongodb+srv://Tiger:<password>@todocluster1.laavd.mongodb.net/?retryWrites=true&w=majority",
     nodePort:3000,
     hostname:'127.0.0.1'
 }
